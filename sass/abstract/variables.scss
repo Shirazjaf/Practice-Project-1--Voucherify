@@ -1,0 +1,32 @@
+//COLORS
+
+$color-primary-font:white;
+$color-primary-dark:#0f1940;
+$color-primary-lite:#020d30;
+$color-gradient:#142874;
+
+//GRID
+$grid-width: 114rem;
+$gutter-vertical:8rem;
+$gutter-horizontal:6rem;
+
+/*
+background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+
+linear-gradient(90deg, rgba(229,155,124,1) 45%, rgba(58,214,224,1) 100%);
+
+        <div class="row">
+            
+        <div class="col-1-of-2">
+            <div class="header__secondary-list">
+                <h4>One API to build personalized:</h4>
+                <div class="header-list">
+                <ul class="list-left">
+                    <li> Coupons</li>
+                    <li> Gift card</li>
+                    <li> Referals</li>
+                    <li> Giveaway</li>
+                </ul>
+            </div>
+        </div>
+*/

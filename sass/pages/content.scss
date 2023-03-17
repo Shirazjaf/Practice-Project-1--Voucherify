@@ -1,0 +1,66 @@
+.contents {
+    height: 85vh;
+    position: relative;
+
+    & h2 {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+    }
+
+}
+
+.col__left {
+    position: absolute;
+    top: 46%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+}
+
+.col__right {
+    position: absolute;
+    top: 40%;
+    right: 1%;
+    transform: translate(-6%, -50%);
+}
+
+
+.composition {
+    position: relative;
+
+    &__photo {
+        width: 55%;
+        position: absolute;
+        transition: all .2s;
+        z-index: 10;
+
+
+        &--p1 {
+            left: -13rem;
+            top: -2rem;
+        }
+
+        &--p2 {
+            right: 15rem;
+            top: 2rem;
+        }
+
+
+        &--p3 {
+            left: 1%;
+            top: 10rem;
+        }
+
+        &:hover {
+            transform: scale(1.5) translateY(-5rem);
+            box-shadow: 0 2.5rem 4rem rgba($color-primary-font , .5);
+            outline: 2px solid white;
+            outline-offset: 5px;
+            z-index: 20;
+        }
+    }
+
+    &:hover &__photo:not(:hover) {
+        transform: scale(.95);
+    }
+}

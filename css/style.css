@@ -1,0 +1,145 @@
+/*
+background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+
+linear-gradient(90deg, rgba(229,155,124,1) 45%, rgba(58,214,224,1) 100%);
+
+        <div class="row">
+            
+        <div class="col-1-of-2">
+            <div class="header__secondary-list">
+                <h4>One API to build personalized:</h4>
+                <div class="header-list">
+                <ul class="list-left">
+                    <li> Coupons</li>
+                    <li> Gift card</li>
+                    <li> Referals</li>
+                    <li> Giveaway</li>
+                </ul>
+            </div>
+        </div>
+*/
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px; }
+
+body {
+  background: linear-gradient(to right bottom, #0f1940, #020d30); }
+
+.header__logo-box {
+  font-size: 2.2rem;
+  color: white;
+  font-family: 'Barlow Condensed', sans-serif; }
+
+.contents h2 {
+  font-size: 5.5rem;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  line-height: 6.8rem; }
+
+.contents h2 span {
+  background: linear-gradient(90deg, #e59b7c 45%, #3ad6e0 100%);
+  -webkit-background-clip: text;
+  color: transparent; }
+
+.col-1-of-2 h4 {
+  font-size: 3rem;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  margin: 1rem 0rem; }
+
+.col-1-of-2 ul {
+  list-style: none; }
+
+.col-1-of-2 ul li {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  line-height: 3.5rem;
+  color: white; }
+
+header {
+  height: 15vh;
+  position: relative; }
+
+.header__logo-box {
+  font-size: 2.5rem;
+  color: white;
+  position: absolute;
+  top: 4rem;
+  left: 8rem; }
+
+.contents {
+  height: 85vh;
+  position: relative; }
+  .contents h2 {
+    position: absolute;
+    top: 10%;
+    left: 5%; }
+
+.col__left {
+  position: absolute;
+  top: 46%;
+  left: 29%;
+  transform: translate(-50%, -50%); }
+
+.col__right {
+  position: absolute;
+  top: 40%;
+  right: 1%;
+  transform: translate(-6%, -50%); }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    position: absolute;
+    transition: all .2s;
+    z-index: 10; }
+    .composition__photo--p1 {
+      left: -13rem;
+      top: -2rem; }
+    .composition__photo--p2 {
+      right: 15rem;
+      top: 2rem; }
+    .composition__photo--p3 {
+      left: 1%;
+      top: 10rem; }
+    .composition__photo:hover {
+      transform: scale(1.5) translateY(-5rem);
+      box-shadow: 0 2.5rem 4rem rgba(255, 255, 255, 0.5);
+      outline: 2px solid white;
+      outline-offset: 5px;
+      z-index: 20; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
